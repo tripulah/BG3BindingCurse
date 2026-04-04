@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<contentList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <content contentuid="h17c65305g1508g47d3gbc2egf23f4fed0a5a" version="1">Curse of Binding</content>
+  <content contentuid="h4df2d74ag3900g489cga1ccg8715d58cdc6f" version="1">Once equipped, the wearer cannot unequip this item.</content>
+  <content contentuid="h08de1f6aga313g26e6gad1bg44e76e7280ae" version="12">Ring of Binding</content>
+  <content contentuid="h7fe0b48fg8797g781agd6cdg9abe9594e916" version="12">This ring appears to have an unusually strong attraction to the wearer.</content>
+  <content contentuid="h51adfaf8gb5f2g5c08g054cgc5aef4b4b473" version="2">Bind on Equip</content>
+  <content contentuid="he6d8664cg67feg1981g22acgfe102c6dad61" version="2">Tagged items bind to wearer when equipped.</content>
+  <content contentuid="h7e4f47ceg5e00ge0c5ge773g99ab48768392" version="1">Key of Unbinding</content>
+  <content contentuid="h84cd2d43gb6b2g69ffg1eb0g412b9c129607" version="1">Key Of Unbinding</content>
+  <content contentuid="hd09aa5e6ge862g9fabg7bcfgdfa9e1ee5291" version="1">Key Of Unbinding</content>
+  <content contentuid="he91dcc22g14f1ge68dgecbdg74b649920783" version="9">Key Of Unbinding</content>
+  <content contentuid="hd8612ce1g71a8gc00bg10a6g5c946fa3bcb3" version="4">A key that unlocks bound equipment. It appears to be single use.</content>
+  <content contentuid="h58a27c89gdc3egf2d6gc8efg40b60b74a8cd" version="2">Master Key of Unbinding</content>
+  <content contentuid="h4019f15bgcb44g0c68gcb8ag3e940f78d86d" version="2">An elaborate key plated with silver. It will unlock all bound equipment without wearing down.</content>
+  <content contentuid="hb03c4e5agb672gb140g26f8g9b0727435e73" version="1">Curse of Binding Box</content>
+  <content contentuid="h6547fa87ga518g6dd8gd3efg847d316bd677" version="1">Contains sample items and a cheat key for the Curse of Binding mod.</content>
+</contentList>

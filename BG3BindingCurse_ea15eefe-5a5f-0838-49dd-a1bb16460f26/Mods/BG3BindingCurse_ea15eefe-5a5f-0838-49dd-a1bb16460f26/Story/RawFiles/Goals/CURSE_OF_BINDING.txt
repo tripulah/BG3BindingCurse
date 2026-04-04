@@ -1,0 +1,90 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+
+// Object is innately cursed (tagged with bind on equip); lock on equip
+IF
+Equipped((ITEM)_ITEM, (CHARACTER)_Character)
+AND
+DB_Players(_Character)
+AND
+IsTagged(_ITEM, (TAG)BC_BIND_ON_EQUIP_8bcdba4a-8d05-4119-8bb5-54b3f5f43fde, 1)
+THEN
+RealtimeObjectTimerLaunch(_ITEM,"BC_WAIT_TO_CURSE",1); // Needs to wait a couple of frames to lock the equipment
+
+// Equipment has the curse applied to it before it is equipped; lock on equip
+IF
+Equipped((ITEM)_ITEM, (CHARACTER)_Character)
+AND
+DB_Players(_Character)
+AND
+HasActiveStatus(_ITEM,"BC_CURSE_OF_BINDING",1)
+THEN
+RealtimeObjectTimerLaunch(_ITEM,"BC_WAIT_TO_LOCK",1); // Needs to wait a couple of frames to lock the equipment
+
+// Equipment has the binding curse applied to it while it is equipped; lock it
+IF
+StatusApplied((ITEM)_ITEM,"BC_CURSE_OF_BINDING",_,_)
+AND
+IsEquipped(_ITEM, 1)
+THEN
+LockUnequip(_ITEM, 1);
+Lock(_ITEM, "BC_Key_Of_Unbinding");
+
+IF
+Unlocked((ITEM)_ITEM, _, (ITEM)_KEY)
+AND
+HasActiveStatus((ITEM)_ITEM,"BC_CURSE_OF_BINDING",1)
+THEN
+RemoveStatus(_ITEM, "BC_CURSE_OF_BINDING");
+RealtimeObjectTimerLaunch(_KEY,"BC_WAIT_TRY_TO_DELETE_KEY",1); // Make regular "Key of Unbinding" consumed on use
+
+PROC
+PROC_RollResult("GAMEPLAY_LockPicking", _Player, (ITEM)_Item, 0)
+AND
+DB_Players(_Player)
+THEN
+PROC_TryStartAD( CRE_StatuePuzzle_PAD_AthleticsCheckFailed_9a5e9b4a-96cd-c930-acff-b3bed749d8b2,_Player);
+
+// If Unequipped through an api call (ex: Haarlep stripping the player) - uncurse the item.
+IF
+Unequipped((ITEM)_ITEM, _Character)
+AND
+HasActiveStatus((ITEM)_ITEM,"BC_CURSE_OF_BINDING",1)
+THEN
+RemoveStatus(_ITEM, "BC_CURSE_OF_BINDING");
+
+IF
+StatusRemoved((ITEM)_ITEM, "BC_CURSE_OF_BINDING",_,_)
+THEN
+LockUnequip(_ITEM, 0);
+Unlock(_ITEM);
+
+IF
+ObjectTimerFinished((ITEM)_ITEM,"BC_WAIT_TO_CURSE")
+THEN
+ApplyStatus(_ITEM, "BC_CURSE_OF_BINDING",-1.0,1);
+
+IF
+ObjectTimerFinished((ITEM)_ITEM,"BC_WAIT_TO_LOCK")
+THEN
+LockUnequip((ITEM)_ITEM, 1);
+Lock(_ITEM, "BC_Key_Of_Unbinding");
+
+IF
+ObjectTimerFinished((ITEM)_KEY,"BC_WAIT_TRY_TO_DELETE_KEY")
+AND
+Exists(_KEY,1)
+AND
+GetTemplate(_KEY, _TEMPLATE)
+AND
+_Template == BC_Key_Of_Unbinding_2daa14b5-fb7b-400e-9cab-c854b688e6a7
+THEN
+RequestDelete(_KEY);
+
+EXITSECTION
+
+ENDEXITSECTION
+

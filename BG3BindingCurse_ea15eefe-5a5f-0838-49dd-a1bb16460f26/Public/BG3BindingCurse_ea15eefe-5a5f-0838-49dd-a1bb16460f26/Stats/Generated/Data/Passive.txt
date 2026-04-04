@@ -1,0 +1,6 @@
+new entry "BC_CURSE_OF_BINDING_PASSIVE"
+type "PassiveData"
+// Curse of Binding
+data "DisplayName" "h17c65305g1508g47d3gbc2egf23f4fed0a5a"
+// Once equipped, the wearer cannot unequip the item.
+data "Description" "h4df2d74ag3900g489cga1ccg8715d58cdc6f"

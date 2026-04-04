@@ -1,0 +1,113 @@
+treasure itemtypes "Common","Uncommon","Rare","Epic","Legendary","Divine","Unique"
+new treasuretable "BC_Keys_Of_Unbinding"
+CanMerge 1
+new subtable "1,1;2,1;3,1"
+object category "I_BC_Key_Of_Unbinding",1,0,0,0,0,0,0,0
+new treasuretable "BC_Sample_Container"
+CanMerge 1
+new subtable "1,1"
+object category "I_BC_Master_Key_Of_Unbinding",1,0,0,0,0,0,0,0
+new subtable "5,1"
+object category "I_BC_Key_Of_Unbinding",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_BC_Ring_of_Binding",1,0,0,0,0,0,0,0
+new treasuretable "TUT_Chest_Potions"
+CanMerge 1
+new subtable "1,1"
+object category "I_CONT_GEN_Chest_BC_Sample_Equipment",1,0,0,0,0,0,0,0
+new treasuretable "DEN_Entrance_Trade"
+CanMerge 1
+new subtable "1,1"
+object category "T_BC_Keys_Of_Unbinding",1,0,0,0,0,0,0,0
+new treasuretable "HAV_HarperQuarterMaster"
+CanMerge 1
+new subtable "1,1"
+object category "T_BC_Keys_Of_Unbinding",1,0,0,0,0,0,0,0
+new treasuretable "DEN_Weaponsmith_Trade"
+CanMerge 1
+new subtable "1,1"
+object category "T_BC_Keys_Of_Unbinding",1,0,0,0,0,0,0,0
+new treasuretable "CRE_Expeditioner_Trade"
+CanMerge 1
+new subtable "1,1"
+object category "T_BC_Keys_Of_Unbinding",1,0,0,0,0,0,0,0
+new treasuretable "GOB_Quartermaster"
+CanMerge 1
+new subtable "1,1"
+object category "T_BC_Keys_Of_Unbinding",1,0,0,0,0,0,0,0
+new treasuretable "UND_KC_Trader_Utility"
+CanMerge 1
+new subtable "1,1"
+object category "T_BC_Keys_Of_Unbinding",1,0,0,0,0,0,0,0
+new treasuretable "CRE_GithQuartermistress_Trade"
+CanMerge 1
+new subtable "1,1"
+object category "T_BC_Keys_Of_Unbinding",1,0,0,0,0,0,0,0
+new treasuretable "MOO_InfernalTrader_Trade"
+CanMerge 1
+new subtable "1,1"
+object category "T_BC_Keys_Of_Unbinding",1,0,0,0,0,0,0,0
+new treasuretable "MOO_ZhentQuartermaster"
+CanMerge 1
+new subtable "1,1"
+object category "T_BC_Keys_Of_Unbinding",1,0,0,0,0,0,0,0
+new treasuretable "WYR_Danthelon_Trader"
+CanMerge 1
+new subtable "1,1"
+object category "T_BC_Keys_Of_Unbinding",1,0,0,0,0,0,0,0
+new treasuretable "WYR_Ironhand_Merchant"
+CanMerge 1
+new subtable "1,1"
+object category "T_BC_Keys_Of_Unbinding",1,0,0,0,0,0,0,0
+new treasuretable "WYR_Bridge_Trader_Tools"
+CanMerge 1
+new subtable "1,1"
+object category "T_BC_Keys_Of_Unbinding",1,0,0,0,0,0,0,0
+new treasuretable "LOW_MurderTribunal_Merchant"
+CanMerge 1
+new subtable "1,1"
+object category "T_BC_Keys_Of_Unbinding",1,0,0,0,0,0,0,0
+new treasuretable "DEN_Thieflings_Pickpocket_Trade"
+CanMerge 1
+new subtable "1,1"
+object category "T_BC_Keys_Of_Unbinding",1,0,0,0,0,0,0,0
+new treasuretable "END_CircusTrader"
+CanMerge 1
+new subtable "1,1"
+object category "T_BC_Keys_Of_Unbinding",1,0,0,0,0,0,0,0
+new treasuretable "GOB_AftermathTrader"
+CanMerge 1
+new subtable "1,1"
+object category "T_BC_Keys_Of_Unbinding",1,0,0,0,0,0,0,0
+new treasuretable "GOB_Festivities_Trader"
+CanMerge 1
+new subtable "1,1"
+object category "T_BC_Keys_Of_Unbinding",1,0,0,0,0,0,0,0
+new treasuretable "LOW_Prison_Rat"
+CanMerge 1
+new subtable "1,1"
+object category "T_BC_Keys_Of_Unbinding",1,0,0,0,0,0,0,0
+new treasuretable "LOW_Weaponsmith_Trade"
+CanMerge 1
+new subtable "1,1"
+object category "T_BC_Keys_Of_Unbinding",1,0,0,0,0,0,0,0
+new treasuretable "PLA_Tollhouse_SuppliesTrader"
+CanMerge 1
+new subtable "1,1"
+object category "T_BC_Keys_Of_Unbinding",1,0,0,0,0,0,0,0
+new treasuretable "PLA_ZhentarimTrader"
+CanMerge 1
+new subtable "1,1"
+object category "T_BC_Keys_Of_Unbinding",1,0,0,0,0,0,0,0
+new treasuretable "UND_MycoVillage_AlchemistDwarf_Trade"
+CanMerge 1
+new subtable "1,1"
+object category "T_BC_Keys_Of_Unbinding",1,0,0,0,0,0,0,0
+new treasuretable "WYR_FlamingFist_Quartermaster_Trade"
+CanMerge 1
+new subtable "1,1"
+object category "T_BC_Keys_Of_Unbinding",1,0,0,0,0,0,0,0
+new treasuretable "HAG_GurHunter"
+CanMerge 1
+new subtable "1,1"
+object category "T_BC_Keys_Of_Unbinding",1,0,0,0,0,0,0,0

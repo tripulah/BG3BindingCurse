@@ -1,0 +1,6 @@
+.vscode
+Tools/
+InstallTools.bat
+*.zip
+*.pak
+mod_publish_logo.png
