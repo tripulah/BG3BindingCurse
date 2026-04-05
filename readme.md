@@ -2,7 +2,7 @@
 
 ## How to Create your own Curse of Binding Equipment (Via Toolkit)
 
-Add the `BC_BIND_ON_EQUIP` tag to your item. This tag makes the item unequippable after wearing it.
+Add the `BC_BIND_ON_EQUIP_8bcdba4a-8d05-4119-8bb5-54b3f5f43fde` tag to your item. This tag makes the item unequippable after wearing it.
 
 ![alt text](image-1.png)
 
@@ -43,11 +43,24 @@ If you want your item to be lockpickable, do the following:
 </node>
 ```
 
-## Bind Any Equipment via a Status
+## Bind Equipment Using a Status
 
-Simply Apply the status `BC_CURSE_OF_BINDING` to the item. If the item is already equipped - the binding will apply immediately, otherwise the curse will activate when equipped. When the status is removed, the curse is removed.
+Apply the status `BC_CURSE_OF_BINDING` to an item to make it bound.
+
+- If the item is **already equipped**, the binding takes effect immediately.  
+- If the item is **not equipped**, the binding will activate once the item is equipped.  
+- Removing the status will also remove the binding effect.
+
+## Require a Unique Key to Unlock Equipment
+
+To prevent an item from being unlocked with the default `Key of Unbinding`, and instead require a custom key:
+
+1. Add the tag `BC_REQUIRES_UNIQUE_KEY_38c6509a-a249-457c-954d-98dc8238e339` to the target item.  
+2. Create your custom key item and set its `Key` value to match the target item's `NAME_GUID`.  
+   - This links the key specifically to that item.  
+   - ![Example](image-2.png)
+3. *(Optional)* Add the tag `BC_CONSUME_KEY_ON_USE_0bb35d6c-684e-435e-b32c-802b34d9ed4b` to the key item if you want it to be consumed when used.
 
 ## Limitations?
 
 `Unequip` calls via a script will work as normal, this mod will make no attempt in re-equipping any cursed items that are externally removed as that will likely cause a load of unintended effects.
-

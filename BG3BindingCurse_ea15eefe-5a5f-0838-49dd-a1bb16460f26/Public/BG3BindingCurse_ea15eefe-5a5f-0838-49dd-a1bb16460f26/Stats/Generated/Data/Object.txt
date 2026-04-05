@@ -22,3 +22,10 @@ data "ValueUUID" "870797b7-fb40-47ae-be7a-544c05c158c8"
 data "ValueOverride" "9999"
 data "Rarity" "Legendary"
 
+new entry "BC_Collar_Key"
+type "Object"
+using "PUZ_Key"
+data "RootTemplate" "e8f88e0a-3cd3-4586-b539-db50e3a0348a"
+data "ValueUUID" "870797b7-fb40-47ae-be7a-544c05c158c8"
+data "Rarity" "Common"
+

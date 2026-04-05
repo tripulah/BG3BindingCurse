@@ -1,6 +1,14 @@
+new entry "BC_Collar_Unique_Lock"
+type "Armor"
+using "_Amulet_Magic"
+data "RootTemplate" "64cabc8a-857c-4d42-8f98-305cd7f3dd7f"
+data "ValueLevel" "3"
+data "Rarity" "Rare"
+data "Unique" "1"
+
 new entry "BC_Ring_of_Binding"
 type "Armor"
 using "_Ring_Magic"
 data "RootTemplate" "7299c4be-287a-4c21-80b7-9ff64ae8cb99"
-data "Rarity" "Uncommon"
 data "Unique" "1"
+

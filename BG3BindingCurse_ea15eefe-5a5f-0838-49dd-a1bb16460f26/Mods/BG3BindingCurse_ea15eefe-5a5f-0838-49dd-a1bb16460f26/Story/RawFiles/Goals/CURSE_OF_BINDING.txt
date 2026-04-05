@@ -29,14 +29,15 @@ IF
 StatusApplied((ITEM)_ITEM,"BC_CURSE_OF_BINDING",_,_)
 AND
 IsEquipped(_ITEM, 1)
+AND
+GetTemplate(_ITEM, (GUIDSTRING)_ITEMKEYGUID)
 THEN
-LockUnequip(_ITEM, 1);
-Lock(_ITEM, "BC_Key_Of_Unbinding");
+PROC_BC_LockEquipment(_ITEM, _ITEMKEYGUID);
 
 IF
 Unlocked((ITEM)_ITEM, _, (ITEM)_KEY)
 AND
-HasActiveStatus((ITEM)_ITEM,"BC_CURSE_OF_BINDING",1)
+HasActiveStatus(_ITEM,"BC_CURSE_OF_BINDING",1)
 THEN
 RemoveStatus(_ITEM, "BC_CURSE_OF_BINDING");
 RealtimeObjectTimerLaunch(_KEY,"BC_WAIT_TRY_TO_DELETE_KEY",1); // Make regular "Key of Unbinding" consumed on use
@@ -50,9 +51,9 @@ PROC_TryStartAD( CRE_StatuePuzzle_PAD_AthleticsCheckFailed_9a5e9b4a-96cd-c930-ac
 
 // If Unequipped through an api call (ex: Haarlep stripping the player) - uncurse the item.
 IF
-Unequipped((ITEM)_ITEM, _Character)
+Unequipped((ITEM)_ITEM, (CHARACTER)_Character)
 AND
-HasActiveStatus((ITEM)_ITEM,"BC_CURSE_OF_BINDING",1)
+HasActiveStatus(_ITEM,"BC_CURSE_OF_BINDING",1)
 THEN
 RemoveStatus(_ITEM, "BC_CURSE_OF_BINDING");
 
@@ -69,20 +70,41 @@ ApplyStatus(_ITEM, "BC_CURSE_OF_BINDING",-1.0,1);
 
 IF
 ObjectTimerFinished((ITEM)_ITEM,"BC_WAIT_TO_LOCK")
+AND
+GetTemplate(_ITEM, (GUIDSTRING)_ITEMKEYGUID)
 THEN
-LockUnequip((ITEM)_ITEM, 1);
-Lock(_ITEM, "BC_Key_Of_Unbinding");
+PROC_BC_LockEquipment(_ITEM, _ITEMKEYGUID);
 
 IF
 ObjectTimerFinished((ITEM)_KEY,"BC_WAIT_TRY_TO_DELETE_KEY")
 AND
 Exists(_KEY,1)
 AND
-GetTemplate(_KEY, _TEMPLATE)
+GetTemplate(_KEY, (GUIDSTRING)_TEMPLATE)
 AND
-_Template == BC_Key_Of_Unbinding_2daa14b5-fb7b-400e-9cab-c854b688e6a7
+IsTagged(_KEY, (TAG)BC_CONSUME_KEY_ON_USE_0bb35d6c-684e-435e-b32c-802b34d9ed4b, 1)
 THEN
 RequestDelete(_KEY);
+
+// lock with unique key
+PROC
+PROC_BC_LockEquipment((ITEM)_ITEM, (GUIDSTRING)_ITEMKEYGUID)
+AND
+IsTagged(_ITEM, (TAG)BC_REQUIRES_UNIQUE_KEY_38c6509a-a249-457c-954d-98dc8238e339, 1)
+AND
+GUIDToString(_ITEMKEYGUID, (STRING)_ITEMKEYSTRING)
+THEN
+LockUnequip(_ITEM, 1);
+Lock(_ITEM, _ITEMKEYSTRING);
+
+// No key provided, use default
+PROC
+PROC_BC_LockEquipment((ITEM)_ITEM, (GUIDSTRING)_ITEMKEYGUID)
+AND
+NOT IsTagged(_ITEM, (TAG)BC_REQUIRES_UNIQUE_KEY_38c6509a-a249-457c-954d-98dc8238e339, 1)
+THEN
+LockUnequip(_ITEM, 1);
+Lock(_ITEM, "BC_Key_Of_Unbinding");
 
 EXITSECTION
 

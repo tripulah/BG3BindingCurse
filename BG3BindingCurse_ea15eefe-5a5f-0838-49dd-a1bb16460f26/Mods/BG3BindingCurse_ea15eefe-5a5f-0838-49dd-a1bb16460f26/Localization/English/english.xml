@@ -9,10 +9,19 @@
   <content contentuid="h7e4f47ceg5e00ge0c5ge773g99ab48768392" version="1">Key of Unbinding</content>
   <content contentuid="h84cd2d43gb6b2g69ffg1eb0g412b9c129607" version="1">Key Of Unbinding</content>
   <content contentuid="hd09aa5e6ge862g9fabg7bcfgdfa9e1ee5291" version="1">Key Of Unbinding</content>
-  <content contentuid="he91dcc22g14f1ge68dgecbdg74b649920783" version="9">Key Of Unbinding</content>
-  <content contentuid="hd8612ce1g71a8gc00bg10a6g5c946fa3bcb3" version="4">A key that unlocks bound equipment. It appears to be single use.</content>
+  <content contentuid="he91dcc22g14f1ge68dgecbdg74b649920783" version="10">Key Of Unbinding</content>
+  <content contentuid="hd8612ce1g71a8gc00bg10a6g5c946fa3bcb3" version="5">A key that unlocks bound equipment. It appears to be single use.</content>
   <content contentuid="h58a27c89gdc3egf2d6gc8efg40b60b74a8cd" version="2">Master Key of Unbinding</content>
   <content contentuid="h4019f15bgcb44g0c68gcb8ag3e940f78d86d" version="2">An elaborate key plated with silver. It will unlock all bound equipment without wearing down.</content>
   <content contentuid="hb03c4e5agb672gb140g26f8g9b0727435e73" version="1">Curse of Binding Box</content>
   <content contentuid="h6547fa87ga518g6dd8gd3efg847d316bd677" version="1">Contains sample items and a cheat key for the Curse of Binding mod.</content>
+  <content contentuid="h11c42a9ag3af1g2e5dgaabeg3b28adb8cf09" version="1">Prevent Key Of Unbinding Unlock</content>
+  <content contentuid="ha71a66c2g7571g761bg04aag5a6b5773f890" version="1">Collar Key</content>
+  <content contentuid="hf69e332cg2873g710cgfe70g8ff8bfa055d7" version="1">Example of a unique key used to unbind the collar example item.</content>
+  <content contentuid="ha55367c7g0721g7b02g5153g225788ecff0c" version="3">Consume Key on Use</content>
+  <content contentuid="h620b7723ge3dbg36a6gca39g70fc2fe8c2a6" version="6">Example Collar</content>
+  <content contentuid="he48f07edg1bdbg6c90g729cga53309395164" version="6">Requires the Example Collar Key to unlock.</content>
+  <content contentuid="hbfcceff0g0ad4g4c5cg1720gf0758b4b3954" version="4">Example Collar Key</content>
+  <content contentuid="h8bb50f05gff21g0fd8g14dag40633b137875" version="4">Used to unlock the Example Collar.</content>
+  <content contentuid="h5193717dgd437g64efgde81g8be1a452e20f" version="2">Requires Unique Key</content>
 </contentList>
