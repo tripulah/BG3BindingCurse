@@ -2,8 +2,8 @@
 <contentList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <content contentuid="h17c65305g1508g47d3gbc2egf23f4fed0a5a" version="1">Curse of Binding</content>
   <content contentuid="h4df2d74ag3900g489cga1ccg8715d58cdc6f" version="1">Once equipped, the wearer cannot unequip this item.</content>
-  <content contentuid="h08de1f6aga313g26e6gad1bg44e76e7280ae" version="12">Ring of Binding</content>
-  <content contentuid="h7fe0b48fg8797g781agd6cdg9abe9594e916" version="12">This ring appears to have an unusually strong attraction to the wearer.</content>
+  <content contentuid="h08de1f6aga313g26e6gad1bg44e76e7280ae" version="13">Ring of Binding</content>
+  <content contentuid="h7fe0b48fg8797g781agd6cdg9abe9594e916" version="13">This ring appears to have an unusually strong attraction to the wearer.</content>
   <content contentuid="h51adfaf8gb5f2g5c08g054cgc5aef4b4b473" version="2">Bind on Equip</content>
   <content contentuid="he6d8664cg67feg1981g22acgfe102c6dad61" version="2">Tagged items bind to wearer when equipped.</content>
   <content contentuid="h7e4f47ceg5e00ge0c5ge773g99ab48768392" version="1">Key of Unbinding</content>
@@ -19,8 +19,8 @@
   <content contentuid="ha71a66c2g7571g761bg04aag5a6b5773f890" version="1">Collar Key</content>
   <content contentuid="hf69e332cg2873g710cgfe70g8ff8bfa055d7" version="1">Example of a unique key used to unbind the collar example item.</content>
   <content contentuid="ha55367c7g0721g7b02g5153g225788ecff0c" version="3">Consume Key on Use</content>
-  <content contentuid="h620b7723ge3dbg36a6gca39g70fc2fe8c2a6" version="6">Example Collar</content>
-  <content contentuid="he48f07edg1bdbg6c90g729cga53309395164" version="6">Requires the Example Collar Key to unlock.</content>
+  <content contentuid="h620b7723ge3dbg36a6gca39g70fc2fe8c2a6" version="7">Example Collar</content>
+  <content contentuid="he48f07edg1bdbg6c90g729cga53309395164" version="7">Requires the Example Collar Key to unlock.</content>
   <content contentuid="hbfcceff0g0ad4g4c5cg1720gf0758b4b3954" version="4">Example Collar Key</content>
   <content contentuid="h8bb50f05gff21g0fd8g14dag40633b137875" version="4">Used to unlock the Example Collar.</content>
   <content contentuid="h5193717dgd437g64efgde81g8be1a452e20f" version="2">Requires Unique Key</content>

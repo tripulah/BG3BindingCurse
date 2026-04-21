@@ -11,7 +11,7 @@ If you want your item to be lockpickable, do the following:
 ![alt text](image.png)
 
 - `Key`: Set to `true` to prevent it from being locked by default.
-- `KeyID`: Set to `NOKEY` or leave it blank.
+- `KeyID`: Set to a random GUID.
 - `LockDifficultyClassID`: chose any appropriate value.
 
 
@@ -28,7 +28,7 @@ If you want your item to be lockpickable, do the following:
     <attribute id="DisplayName" type="TranslatedString" handle="h08de1f6aga313g26e6gad1bg44e76e7280ae" version="9" />
     <attribute id="Icon" type="FixedString" value="Item_LOOT_GEN_Ring_I_Gold_A_1" />
     <attribute id="LockDifficultyClassID" type="guid" value="31e92da6-bac9-46f7-af99-5f33d98fd4f0" />
-    <attribute id="Key" type="FixedString" value="NOKEY" />
+    <attribute id="Key" type="FixedString" value="0bcf5928-b7d9-4eb1-b40a-e6ff3f6d2630" />
     <attribute id="IsKey" type="bool" value="True" />
     <attribute id="Description" type="TranslatedString" handle="h7fe0b48fg8797g781agd6cdg9abe9594e916" version="9" />
     <children>
